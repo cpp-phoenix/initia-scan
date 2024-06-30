@@ -18,7 +18,7 @@ function Home () {
         return (
             <div className='flex items-center justify-between w-full border-t border-[#00FF00] py-4 px-4 space-x-4'>
                 <div>{index}</div>
-                <button onClick={() => {navigate('/search/' + _validatorData["validator_address"])}} className='w-60 truncate hover:text-[#FFFFFF]'>{_validatorData["validator_address"]}</button>
+                <button onClick={() => {navigate('/search/' + _validatorData["validator_address"])}} className='underline w-60 truncate hover:text-[#FFFFFF]'>{_validatorData["validator_address"]}</button>
                 <div className='truncate '>{_validatorData["voting_power"]}</div>
                 <div className='truncate'>{_validatorData["rank"]}</div>
                 <div className='truncate'>{_validatorData["uptime"]}</div>

@@ -151,12 +151,12 @@ function Blocks () {
             <div className='flex items-center justify-between w-full border-t border-[#FF0000] py-4 px-4 space-x-4'>
                 <div className='flex space-x-2'>
                     <div className='py-1 flex flex-col justify-between'>
-                        <Link to={`/search/${_blockData["block_height"]}`}><button className='hover:text-[#FFFFFF] text-sm font-semibold underline'>#{_blockData["block_height"]}</button></Link>
+                        <Link to={`/search/${_blockData["block_height"]}`}><button className='hover:text-[#FFFFFF] text-sm font-semibold underline truncate '>#{_blockData["block_height"]}</button></Link>
                     </div>
                 </div>
                 <div className='text-[14px] truncate'>{_blockData["block_hash"]}</div>
-                <div>{_blockData["moniker"]}</div>
-                <div>{_blockData["gas_used"]}</div>
+                <div className='truncate w-40'>{_blockData["moniker"]}</div>
+                <div className='truncate w-28'>{_blockData["gas_used"]}</div>
                 <div className='text-[14px] truncate'>{_blockData["block_time"]}</div>
             </div>
         )
